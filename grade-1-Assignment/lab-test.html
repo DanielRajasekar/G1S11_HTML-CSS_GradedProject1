@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="lab-test.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+</head>
+<body>
+    <section id="block">
+        <article>
+            <form action="">
+            <div id="form">
+                <h3>1. Your Contact Details</h3>
+                    <input type="text" class="text" placeholder="Full Name">
+                    <input type="text" class="text" placeholder="Patient Id if exists">
+                    <br>
+                    <input type="number" min="6000000000" max="9999999999" class="text" placeholder="Contact Number">
+                    <input type="text" class="text" placeholder="Email Id">
+
+
+                <h3>2. Address</h3>
+                    <input type="text" class="text" placeholder="H-No">
+                    <input type="text" class="text" placeholder="Street">
+                    <br>
+                    <input type="text" class="text" placeholder="Area">
+                    <br>
+                    <label for="District">District</label>
+                    
+                    <select name="district" >
+                        <option value="choose">Choose</option>
+                        <option value="Vellore">Vellore</option>
+                    </select>
+                <h3>3. Choose Test Type.</h3> 
+                <input type="checkbox" id="checkbox"><label >CBC</label>
+                    <br>
+                <input type="checkbox" id="checkbox"><label >Complete Urine</label>
+                    <br>
+                <input type="checkbox" id="checkbox"><label >Lipid Profile</label>
+                    <br>
+                <input type="checkbox" id="checkbox"><label >Thyroid Stimulating Hormone(TSH)</label>
+                    <br>
+                <input type="checkbox" id="checkbox"><label >Gulcose Test</label>
+                    <br>
+                    <br>
+                    <br>
+                <h3>4. Do you want a hard copy of the report also?</h3>
+                <br>
+                <input type="radio" name="report" id="radio"><label >Yes</label>
+                <br>
+                <input type="radio" name="report" id="radio"><label >No</label>
+                <br>
+                <h3>5. Select Your Comfortable Date and Time</h3> 
+                <br>
+                <label >Date</label>
+                <input type="date" id="date">
+                
+                <label >Time</label>
+                <input type="time" id="time">
+                <br>
+                <br>
+
+            </div>
+            <img src="lab-test.jpg" alt="lab test img">
+            
+        </article>
+    </section>
+    <button>Submit</button>
+
+    </form>
+    <button>Reset</button>
+</body>
+</html>

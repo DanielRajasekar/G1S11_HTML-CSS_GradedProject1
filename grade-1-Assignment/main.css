@@ -1,0 +1,202 @@
+body{
+    /* width: 100%; */
+    /* height: 100%; */
+    margin: 0%;
+}
+#container{
+    width:100%;
+    height: 100%;
+    /* margin: 0%; */
+
+}
+header{
+    width:100%;
+    height: 50px;
+    background-color: cadetblue;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+}
+footer{
+    width:100%;
+    position: fixed;
+    bottom: 0%;
+    background-color: cadetblue;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+#navigate{
+    position: fixed;
+    top:50px;
+    width: 100%;
+    z-index: 1;
+}
+.menu{
+    height: 39px;
+    background-color: burlywood;
+    margin: 0px;
+    width: 100%;
+}
+.menu li{
+    display: inline-block;
+    padding: 10px 20px;
+    list-style-type: none;
+}
+.menu a{
+    text-decoration: none;
+    color: brown;
+    padding: 10px;
+}
+
+/* drop down */
+
+#btn1:hover{
+    background-color: gray;
+}
+#btn2:hover{
+    background-color: gray;
+}
+#btn3:hover{
+    background-color: gray;
+}
+#dd1{
+    position: absolute;
+    top: 39px;
+    left: 104px;
+}
+#dd1 li{
+    display: none;
+    background-color: brown;
+    color: aliceblue;
+}
+#btn2:hover #dd1 li{
+    display: block;
+}
+#dd1 li:hover{
+    background-color: darkslategray;
+    cursor: pointer;
+}
+#dd2{
+position: absolute;
+top:39px;
+left:262px;
+}
+
+#dd2 li{
+    display: none;
+    background-color: brown;
+    color: aliceblue;
+}
+#dd2 li:hover{
+    background-color: darkslategray;
+    cursor: pointer;
+}
+#btn3:hover #dd2 li{
+    display: block;
+}
+#btn4:hover{
+    background-color: gray;
+}
+
+/* -------------- advertisement--------- */
+
+#advertise{
+    width: 90%;
+    height: 500px;
+    background-image: url("ani1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid steelblue;
+    position: relative;
+    top: 90px;
+    left: 5%;
+    margin-top: 10px;
+    animation-name: move;
+    animation-delay: 2s;
+    animation-duration: 30s  ;
+    animation-iteration-count: infinite;
+}
+@keyframes move{
+    
+    25%{
+        background-image: url("ani2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    50%{
+        background-image: url("ani3.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    75%{
+        background-image: url("ani4.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    100%{
+        background-image: url("ani5.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* -------------product------------ */
+
+.container{
+    position: relative;
+    width: 100%;
+    top:160px;
+    /* background-color: aqua; */
+    height: 100%;
+}
+h2{
+    padding: 15px 20px;
+    background-color:gray
+}
+
+img{
+    width: 200px;
+    height: 150px;
+}
+
+.container .item{
+    display: inline-block;
+    margin-left: 110px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+} 
+.details p{
+    margin-top: -1px;
+    color: cornflowerblue;
+}
+.btn{
+    border-radius: 5px;
+    margin-top: -10px;
+    border: 2px solid rgb(96, 96, 236) ; 
+    cursor: pointer;
+    text-align: center;
+    width: 190px;
+    height: 20px;
+    color: orange;
+    font-weight: bold;
+    padding: 3px 0px;
+}
+.btn:active{
+    background-color: rgb(250, 234, 230) ;
+    border: 1px solid rgb(0, 255, 76);
+}
+.item:hover img{
+    width: 220px;
+    height: 160px;
+
+}
+
